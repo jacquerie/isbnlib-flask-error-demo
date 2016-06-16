@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
 # Comment me out for the example to work
-import isbnlib
+from micawber.providers import Provider
+p = Provider('')
+p.fetch('http://www.google.com')
+
 from flask import Flask
 app = Flask(__name__)
 
